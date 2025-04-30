@@ -1,0 +1,134 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    line-height: 1.6;
+  }
+  
+  /* Main container */
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  
+  /* Profile card */
+  .profile-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile image */
+  .profile-img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+  
+  /* Title */
+  .title {
+    color: #777;
+    margin: 0.5rem 0;
+  }
+  
+  /* Bio */
+  .bio {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #444;
+    padding: 0 10px;
+  }
+  
+  /* Section styling */
+  .section {
+    margin: 1.5rem 0;
+    text-align: left;
+  }
+  
+  .section h2 {
+    color: #2c7be5;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills,
+  .education {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills li,
+  .education li {
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* CV Button */
+  .cv-button {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 10px 20px;
+    background-color: #2c7be5;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cv-button:hover {
+    background-color: #1a5dc9;
+  }
+  
+  /* Social links */
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    color: #2c7be5;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #1b5edb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .profile-card {
+      padding: 1.5rem;
+    }
+  
+    .bio {
+      font-size: 0.95rem;
+    }
+  
+    .profile-img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .section h2 {
+      font-size: 1rem;
+    }
+  }
